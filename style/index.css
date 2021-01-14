@@ -18,6 +18,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    max-width: 500px;
 }
 
 a {
@@ -51,10 +52,11 @@ h2 {
 }
 
 #hero {
-    height: 65vh;
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    height: 50vw;
+    max-height: 500px;
 }
 
 #hero .container {
@@ -66,7 +68,7 @@ h2 {
     background-size: cover;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 83vw;
 }
 
 h1 {
@@ -86,3 +88,28 @@ h1 {
     color: white;
 }
 
+#projectThumbnails {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#projectThumbnails .thumbnail {
+    margin: 1vw 2vw;
+    font-size: 12px;
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 25vw;
+    height: 20vw;
+}
+
+.thumbnail:hover img {
+    outline: 1px solid #003B4D;
+}
+
+.thumbnail:hover p {
+    font-weight: bold;
+}
