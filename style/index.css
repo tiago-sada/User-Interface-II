@@ -1,0 +1,46 @@
+* {
+    outline: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    display: flex;
+    flex-flow: row ;
+    flex-wrap: ;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+nav a {
+    background-color: white;
+    color: #003B4D;
+    text-decoration: none;
+    margin: 0;
+    padding: 7px 15px;
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    outline: 1px solid #003B4D;
+}
+
+nav a:hover {
+    background-color: #003B4D;
+    color: white;
+}
+
+.current {
+    background-color: #003B4D;
+    color: white;
+}
+
+h2 {
+    color: #003B4D;
+}
