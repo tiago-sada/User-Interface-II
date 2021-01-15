@@ -3,6 +3,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     flex-flow: row ;
@@ -10,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    padding: 0 20px;
+    padding: 10px 30px;
 }
 
 nav {
@@ -21,8 +25,9 @@ nav {
     max-width: 500px;
 }
 
-a {
-    transition: 0.15s;
+a,.thumbnail {
+    transition: 0.25s;
+    cursor: pointer;
 }
 
 nav a {
@@ -34,7 +39,7 @@ nav a {
     width: 25%;
     text-align: center;
     font-size: 12px;
-    outline: 1px solid #003B4D;
+    outline: 2px solid #003B4D;
 }
 
 nav a:hover {
@@ -81,11 +86,13 @@ h1 {
     padding: 10px 20px;
     color: #003B4D;
     text-decoration: none;
+    outline: 2px solid #003B4D;
 }
 
 #hero a:hover {
-    background-color: #003B4D;
+    background-color: rgba(0, 0, 0, 0.3);;
     color: white;
+    outline: 2px solid white;
 }
 
 #projectThumbnails {
@@ -95,10 +102,12 @@ h1 {
     justify-content: center;
 }
 
-#projectThumbnails .thumbnail {
+.thumbnail {
     margin: 1vw 2vw;
     font-size: 12px;
     text-align: center;
+    text-decoration: none;
+    color: #003B4D;
 }
 
 .thumbnail img {
@@ -107,9 +116,47 @@ h1 {
 }
 
 .thumbnail:hover img {
-    outline: 1px solid #003B4D;
+    outline: 2px solid #003B4D;
 }
 
 .thumbnail:hover p {
     font-weight: bold;
 }
+
+footer {
+    background-color: #003B4D;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#social {
+    margin: 10px 0;
+}
+
+#social a {
+    color: white;
+    text-decoration: none;
+}
+
+#social a:hover {
+    text-decoration: underline;
+}
+
+#contactMe {
+    background-color: white;
+    padding: 10px 20px;
+    color: #003B4D;
+    text-decoration: none;
+}
+
+#contactMe:hover {
+    background-color: #003B4D;
+    color: white;
+    outline: 2px solid white;
+}
+
+
