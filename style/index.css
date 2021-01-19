@@ -159,4 +159,42 @@ footer {
     outline: 2px solid white;
 }
 
+@media (max-width:800px) {
+
+    .thumbnail img {
+        width: 39vw;
+        height: 30vw;
+    }
+}
+
+@media (max-width:500px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header h2 {
+        width: 80vw;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    header nav a {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .thumbnail img {
+        height: 39vw;
+    }
+    
+}
 
